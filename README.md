@@ -6,8 +6,8 @@ Example app for React Component styling
 
 - Inline styles : branch = master
 - Radium : branch = radium
-- External CSS : branch = external
-- CSS modules: branch = css-modules
+- External CSS (without pre-compiling) : branch = external
+- CSS modules( with pre compiling): branch = css-modules
 
 ## Install
 
