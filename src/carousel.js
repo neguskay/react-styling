@@ -15,7 +15,7 @@ function renderSlides(props) {
 
 function Carousel(props) {
   return (
-    <div className="dft__carousel">
+    <div>
       {renderSlides(props)}
       {props.nav}
     </div>
