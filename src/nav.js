@@ -1,22 +1,20 @@
-import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
+import styleable from 'react-styleable'
+
+import css from './nav.css'
 
 function getPrevClassName(props) {
-  return classnames('dft__nav__btn', 'dft__nav__btn--prev', {
-    'dft__nav__btn--hidden': !props.hasPrevious
-  })
+  return props.hasPrevious ? props.css.prev : props.css.prevHidden
 }
 
 function getNextClassName(props) {
-  return classnames('dft__nav__btn', 'dft__nav__btn--next', {
-    'dft__nav__btn--hidden': !props.hasNext
-  })
+  return props.hasNext ? props.css.next : props.css.nextHidden
 }
 
 function Nav(props) {
   return (
-    <div className="dft__nav">
+    <div className={props.css.root}>
       <button className={getPrevClassName(props)} onClick={props.onPrevious}>
         &#10094;
       </button>
@@ -34,4 +32,4 @@ Nav.propTypes = {
   hasNext: PropTypes.bool
 }
 
-export default Nav
+export default styleable(css)(Nav)
