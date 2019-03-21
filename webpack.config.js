@@ -33,6 +33,15 @@ module.exports = {
         test: /\.jpg/,
         loaders: ['file-loader'],
         include
+      },
+      {
+        test: /\.css/,
+        loaders: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader'
+        ],
+        include
       }
     ]
   }
