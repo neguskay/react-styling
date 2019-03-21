@@ -4,10 +4,10 @@ Example app for React Component styling
 
 ## Styling methods
 
-- Inline styles
-- Radium
-- External CSS
-- CSS modules
+- Inline styles : branch = master
+- Radium : branch = radium
+- External CSS : branch = external
+- CSS modules: branch = css-modules
 
 ## Install
 

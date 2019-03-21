@@ -1,7 +1,5 @@
-import React from 'react';
-
-import styles from './frame-styles.js';
+import React from 'react'
 
 export default function Frame({ children }) {
-	return <div style={styles.root}>{children}</div>;
+  return <div>{children}</div>
 }

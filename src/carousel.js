@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import styles from './carousel-styles.js'
-
 function renderSlides(props) {
   return React.Children.map(props.children, (slide, i) => {
     return React.cloneElement(slide, {
@@ -17,7 +15,7 @@ function renderSlides(props) {
 
 function Carousel(props) {
   return (
-    <div style={styles.root}>
+    <div>
       {renderSlides(props)}
       {props.nav}
     </div>
